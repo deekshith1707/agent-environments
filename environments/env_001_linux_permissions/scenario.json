@@ -1,0 +1,11 @@
+{
+  "id": "env_001_linux_permissions",
+  "category": "system_admin",
+  "title": "Secure a shared web directory",
+  "version": 1,
+  "timeout_seconds": 120,
+  "task": "Repair ownership and permissions under /var/www/html without deleting files.",
+  "constraints": ["Preserve every seeded path", "Do not alter /var/log/task_audit.log"],
+  "reward": {"pass": 1, "fail": 0},
+  "artifacts": ["/var/www/html", "/var/log/task_audit.log"]
+}

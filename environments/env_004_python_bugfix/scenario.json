@@ -1,0 +1,11 @@
+{
+  "id": "env_004_python_bugfix",
+  "category": "refactoring",
+  "title": "Fix a Python data-processing regression",
+  "version": 1,
+  "timeout_seconds": 120,
+  "task": "Handle zero-count records and include valid negative values while preserving the public API.",
+  "constraints": ["Preserve all original tests", "Add two edge-case tests", "Use only the existing dependencies"],
+  "reward": {"pass": 1, "fail": 0},
+  "artifacts": ["/opt/dataproc/dataproc/aggregator.py", "/opt/dataproc/tests/test_aggregator.py"]
+}

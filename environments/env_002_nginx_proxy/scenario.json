@@ -1,0 +1,11 @@
+{
+  "id": "env_002_nginx_proxy",
+  "category": "network_config",
+  "title": "Configure an Nginx reverse proxy",
+  "version": 1,
+  "timeout_seconds": 120,
+  "task": "Proxy app.internal to the local Node service with required response headers.",
+  "constraints": ["Preserve /etc/nginx/nginx.conf", "Do not expose TLS", "Preserve /etc/nginx/audit_marker"],
+  "reward": {"pass": 1, "fail": 0},
+  "artifacts": ["/etc/nginx/conf.d/app.conf", "/etc/nginx/audit_marker"]
+}

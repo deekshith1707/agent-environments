@@ -1,0 +1,11 @@
+{
+  "id": "env_000_template",
+  "category": "state_verification",
+  "title": "TODO: Environment title",
+  "version": 1,
+  "timeout_seconds": 120,
+  "task": "TODO: Describe the measurable task.",
+  "constraints": ["TODO: Add a safety constraint."],
+  "reward": {"pass": 1, "fail": 0},
+  "artifacts": ["TODO: Add inspected paths."]
+}

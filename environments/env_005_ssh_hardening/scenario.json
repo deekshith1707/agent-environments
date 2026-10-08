@@ -1,0 +1,11 @@
+{
+  "id": "env_005_ssh_hardening",
+  "category": "state_verification",
+  "title": "Harden the SSH server configuration",
+  "version": 1,
+  "timeout_seconds": 120,
+  "task": "Apply the seven required SSH hardening settings and write a validation report.",
+  "constraints": ["Keep port 22", "Preserve sshd_config and sshd_audit_seed", "Do not alter PAM configuration"],
+  "reward": {"pass": 1, "fail": 0},
+  "artifacts": ["/etc/ssh/sshd_config", "/etc/ssh/hardening_report.txt", "/etc/ssh/sshd_audit_seed"]
+}
