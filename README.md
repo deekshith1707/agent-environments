@@ -22,7 +22,3 @@ python3 -m unittest discover -s tests -v
 ./run_all_evals.sh
 ./run_all_evals.sh env_001_linux_permissions --interactive
 ```
-
-Requirements: Python 3.10+, Bash, and Docker.
-
-Updated README.
