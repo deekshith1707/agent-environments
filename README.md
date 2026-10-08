@@ -1,4 +1,4 @@
-# Solumn AI — Agentic Environments
+# Agentic Environments
 
 A learning project for building Docker-based benchmark environments that test
 autonomous AI agents with deterministic pass/fail graders.
@@ -24,3 +24,5 @@ python3 -m unittest discover -s tests -v
 ```
 
 Requirements: Python 3.10+, Bash, and Docker.
+
+Updated README.
